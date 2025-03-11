@@ -19,13 +19,14 @@ public class AuthController {
         this.jwtUtil = jwtUtil;
     }
 
-    @PostMapping("/login")
+    /*@PostMapping("/login")
     public String login(@RequestBody User user) {
         Optional<User> dbUser = userRepository.findByUsername(user.getUsername());
+        System.out.println("Checking for user: " + dbUser);
         if (dbUser.isPresent() && passwordEncoder.matches(user.getPassword(), dbUser.get().getPassword())) {
             return jwtUtil.generateToken(user.getUsername());
         }
         return "Invalid credentials";
-    }
+    }*/
 }
 

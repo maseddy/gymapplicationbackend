@@ -15,7 +15,7 @@ public class MemberController {
         this.memberRepository = memberRepository;
     }
 
-    @GetMapping
+    /*@GetMapping
     public List<Member> getAllMembers() {
         return memberRepository.findAll();
     }
@@ -35,6 +35,6 @@ public class MemberController {
     @DeleteMapping("/{id}")
     public void deleteMember(@PathVariable Long id) {
         memberRepository.deleteById(id);
-    }
+    }*/
 }
 
