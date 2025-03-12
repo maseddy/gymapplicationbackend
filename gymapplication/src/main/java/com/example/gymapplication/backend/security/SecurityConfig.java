@@ -15,6 +15,8 @@ public class SecurityConfig {
                 .requestMatchers("/api/login").permitAll()
                 .requestMatchers("/api/listmembers").permitAll()
                 .requestMatchers("/api/addmembers").permitAll()
+                .requestMatchers("/api/editmember").permitAll()
+                .requestMatchers("/api/deletemember").permitAll()
                 .anyRequest().authenticated()
             );
         return http.build();

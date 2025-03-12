@@ -42,10 +42,6 @@ public class Members {
         return id;
     }
 
-    public String getIdAsString() {
-        return id != null ? id.toString() : null;
-    }
-
     public void setId(Long id) {
         this.id = id;
     }

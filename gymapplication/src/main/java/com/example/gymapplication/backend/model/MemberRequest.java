@@ -1,6 +1,7 @@
 package com.example.gymapplication.backend.model;
 
 public class MemberRequest {
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
@@ -11,6 +12,10 @@ public class MemberRequest {
     // Getters and Setters
     public String getFirstName() {
         return firstName;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public void setFirstName(String firstName) {
